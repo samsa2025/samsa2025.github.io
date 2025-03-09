@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>SAMSA Workshop: Series, Automata, Matrices, Symbolic dynamics, and their Applications</title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="thumbnail" content="logo_inv.gif" />
+
+<script src="jquery.js"></script>
+</head>
+
+<body>
+
+<div id="main" class="width">
+
+ <aside id="sidebar" class="column-left">
+ 
+  <header>
+   SAMSA Workshop
+  </header>
+ 
+  <nav id="mainnav">
+   <ul>
+    <li class="selected-item"><a href="#welcome">Welcome</a></li>
+    <li><a href="#program">Program</a></li>
+    <li><a href="#organisation">Organisation</a></li>
+   </ul>
+  </nav>
+  
+ </aside>
+
+ <div class="column-right">
+ <div id="content">
+    
+
+     <div id="welcome" >
+     <h1>SAMSA Workshop </h1>
+     <h2>
+         Workshop on Series, Automata, Matrices, Symbolic dynamics, and their Applications
+     </h2>
+     <div class="key-info">
+         <time datetime="2025-06-2">Monday, 2 June 2025</time> to <time datetime="2025-06-7">Friday, 6 June 2025</time> 
+         
+     </div>
+     <div class="key-info-sm">
+        Warsaw, Poland
+     </div>
+
+     <h5>Aim:</h5>
+     <p>
+    The aim of SAMSA is to bring together researchers working on weighted automata, matrix reachability, noncommutative power series and symbolic dynamics in order to identify common open problems and ways to attack them by techniques across the mentioned areas.
+     
+     The plan is to discuss recent results, emerging research directions, promising applications, open problems and stimulate cooperation among researchers working in these fields.
+   </p>
+ 
+     <h5>Topics:</h5>
+     <p>
+     Topics of interest include (but are not limited to):
+     </p>
+       <ul>
+         <li>weighted automata,</li>
+         <li>matrix reachability,</li>
+         <li>semi-groups,</li>
+         <li>noncommutative power series,</li>
+         <li>symbolic dynamics,</li>
+         <li>linear recurrence sequences.</li>
+       </ul>
+
+     </div>
+
+
+
+     
+     <div id="program">
+      <h3>Program</h3>
+      <p>
+      Details of the programme will follow.
+      </p>
+      <p>
+      The programme will consist of invited talks and an open problem discussion. </p>
+
+      <h5>Invited Speakers: </h5>
+      <ul>
+
+
+        <li><a href="https://www-igm.univ-mlv.fr/~perrin/">Dominique Perrin</a>, Universite Paris Est <br>
+        <strong>Title: TBD</strong>
+
+         </li>
+
+         <li>more TBA soon!</li>
+
+
+      </ul>
+
+     
+
+     </div>
+
+
+     <div id="organisation">
+      <h3>Organisation</h3>
+      <p>
+        SAMSA Workshop: Series, Automata, Matrices, Symbolic dynamics, and their Applications is organised by <a href="https://www.davidpurser.net/">David Purser</a>, <a href="https://sites.google.com/site/ryzandrew/">Andrew Ryzhikov</a> and <a href="http://henry.sinclair-banks.com/">Henry Sinclair-Banks</a>.
+      </p>
+      <p>
+        Contact: <code>
+<script>document.write('D'+'&'+'#'+'4'+'6'+';'+'&'+'#'+'8'+'0'+';'+'u'+'&'+'#'+'1'+'1'+'4'+';'+'&'+'#'+'1'+'1'+'5'+';'+'e'+'r'+'[obvious-symbol]'+'l'+'i'+'v'+'&'+'#'+'1'+'0'+'1'+';'+'r'+'p'+'o'+'o'+'l'+'&'+'#'+'4'+'6'+';'+'a'+'c'+'&'+'#'+'4'+'6'+';'+'u'+'&'+'#'+'1'+'0'+'7'+';');</script></code> and <code><script>
+  document.write(
+      'r'+'y'+'z'+'h'+'i'+'k'+'o'+'v'+'.'+
+      'a'+'n'+'d'+'r'+'e'+'w'+'[obvious-symbol]'+
+      'g'+'m'+'a'+'i'+'l'+'.'+
+      '&#'+'99'+';'+'o'+'&#'+'109'+';'
+  );
+</script>
+</code> and <code><script>
+  document.write(
+      'h'+'s'+'b'+'[obvious-symbol]'+
+      'm'+'i'+'m'+'u'+'w'+'.'+
+      'e'+'d'+'&#'+'117'+';'+'.'+'p'+'l'
+  );
+</script>
+</code>.
+      </p>
+      <p> The SAMSA workshop takes place in person as a workshop in Warsaw. Full location details will be confirmed later.<br>
+        
+      </p>
+      <p>
+        Supported by Thematic Research Programmes (POB III), Faculty of Mathematics, Informatics and Mechanics, University of Warsaw.
+      </p>
+      </div>
+
+
+   </div>
+
+     <footer class="clear">
+        <hr>
+        <p>&copy; 2025. Based on <a href="https://web.archive.org/web/20190429211603/http://zypopwebtemplates.com/">Free CSS Templates</a> by ZyPOP</p>
+     </footer>
+ </div>
+ 
+ <div class="clear"></div>
+</div>
+<script>
+  $(document).ready(function(){
+    prepare = function() {
+      var scrollPos = $(window).scrollTop();
+      $('#content > div').each(function(i){
+        var offT = $(this).offset().top;
+        if((offT-scrollPos-20) <= 0) {
+          $('.selected-item').removeClass('selected-item')
+          $('#mainnav li').eq(i).addClass('selected-item')
+        }
+      })
+    };
+    $(window).scroll(prepare);
+    prepare();
+  });
+</script>
+
+
+</body>
+</html>
+
