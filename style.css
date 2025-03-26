@@ -431,3 +431,14 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 
 
 }
+.people {
+    display: flex;
+    flex-wrap: wrap; /* Wraps to next line on small screens */
+    gap: 10px; /* Small gap between people */
+    justify-content: flex-start; /* Ensures items stay packed together */
+}
+
+.person {
+    text-align: center;
+    flex: 0 0 auto; /* Prevents stretching */
+}
