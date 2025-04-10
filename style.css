@@ -280,15 +280,22 @@ ul.past-events {
 /** content+sidebar styles **/
 .column-right {
 	margin-left: 250px;
-	padding: 20px;
 	background-color: var(--back);
 }
 .column-left {
 	float:left;
 }
 aside#sidebar {
-	width:250px;
-	position: fixed;
+  width: 250px;
+  position: fixed; /* Fix the sidebar vertically */
+  top: 0;  /* Stick the sidebar to the top */
+  bottom: 0; /* Optionally, stick it to the bottom (or you can leave this out if you only want to fix it at the top) */
+  left: 0; /* Fixed horizontally at the left */
+  /* Alternatively, you can use 'right: 0;' to fix it on the right side */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  color: white; /* Text color */
+  box-sizing: border-box; /* Make sure paddi*/
+  background: var(--accent);
 }
 nav#mainnav ul {
 	padding: 0;
@@ -327,6 +334,7 @@ nav#mainnav li a {
 
 #content {
     font-size: 1.2em;
+    padding: 20px;
 }
 
 
@@ -400,6 +408,29 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 }
 
 
+.photo-header { 
+  width: 100%; /* Makes the image take up the full width of the parent container */
+  height: 0;
+  padding-top: 50%; /* This will set the height to 70% of the width (aspect ratio trick) */
+  background-image: url('header.jpg'); /* Set the background image */
+  background-size: cover; /* Ensures the image fully covers the container */
+  background-position: center; /* Center the image */
+  position: relative;
+
+}
+
+
+
+.text-overlay {
+  position: absolute; /* Position text absolutely inside the .photo-element */
+  top: 40%; /* Vertically center the text */
+  left: 50%; /* Horizontally center the text */
+  transform: translate(-50%, -50%); /* Offset by 50% of the element’s size for true centering */
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 3.8em;
+  text-shadow: 3px 3px 0px white, -3px -3px 0px white, 3px -3px 0px white, -3px 3px 0px white; 
+}
 
 
 
@@ -442,3 +473,67 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
     text-align: center;
     flex: 0 0 auto; /* Prevents stretching */
 }
+
+a.email{
+	font-size: 0.8em;
+	font-family: monospace;
+}
+
+
+
+.schedule {
+  display: grid;
+  grid-template-columns: repeat(420, 1fr); /* 1 column per minute from 09:30 to 17:30 */
+  gap: 2px;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+}
+
+
+.day, .daylabel{
+  display: contents; /* Allows grid items inside to span across the shared grid */
+}
+
+.block  {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-column: span 1;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 4px;
+  overflow: hidden;
+}
+
+.daylabel > div {
+   grid-column: 1 / span 200;
+   font-size:16px;
+}
+
+.block .label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+}
+
+.block .time {
+  font-size: 12px;
+  color: #eee;
+  padding: 2px 0;
+}
+
+/* Session types */
+.block.coffee       { background-color: #a1887f; }
+.block.lunch        { background-color: #4caf50; }
+.block.invited      { background-color: #1976d2; }
+.block.participant  { background-color: #f57c00; }
+.block.special      { background-color: #9c27b0; }
+.block.welcome      { background-color: #00796b; }
+.block.other        { background-color: #607d8b; }
+.block.open         { background-color: #388e3c; }
+.block.dinner       { background-color: #c2185b; }
+.block.tour         { background-color: #6d4c41; }
+
