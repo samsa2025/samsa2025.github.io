@@ -483,7 +483,7 @@ a.email{
 
 .schedule {
   display: grid;
-  grid-template-columns: repeat(420, 1fr); /* 1 column per minute from 09:30 to 17:30 */
+  grid-template-columns: repeat(360, 1fr); /* 1 column per minute from 09:30 to 17:30 */
   gap: 2px;
   font-family: sans-serif;
   margin-bottom: 5px;
