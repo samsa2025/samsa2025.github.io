@@ -585,3 +585,24 @@ a.email{
         display: block;
     }
 }
+
+.session-time {
+	font-size: 1.1em;
+	color: #666;
+	margin-bottom: 5px;
+	display: block;
+}
+.session-time::after{
+	content: " (Click titles to expand abstracts)";
+	font-size:0.8em;
+	color:#555
+}
+#participant-talks h5 { 
+	padding-bottom: 2px;
+	margin-top: 5px;
+	color: var(--accent);
+}
+
+#participant-talks summary{
+	margin-bottom: 10px;;
+}

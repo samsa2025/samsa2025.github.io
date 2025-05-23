@@ -7,6 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="thumbnail" content="logo_inv.gif" />
         <script src="jquery.js"></script>
+        <!-- MathJax for LaTeX rendering -->
+        <script>
+        window.MathJax = {
+            tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+            svg: {fontCache: 'global'}
+        };
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+
     </head>
     <body>
         <div id="main" class="width">
@@ -17,7 +26,9 @@
                 <nav id="mainnav">
                     <ul>
                         <li class="selected-item"><a href="#welcome">Welcome</a></li>
-                        <li><a href="#program">Program</a></li>
+                        <li><a href="#program">Schedule</a></li>
+                        <li><a href="#invited-talks">Invited talks</a></li>
+                        <li><a href="#participant-talks">Participant talks</a></li>
                         <li><a href="#organisation">Organisation</a></li>
                     </ul>
                 </nav>
@@ -67,11 +78,95 @@
                         <p>
                             The programme will consists of invited talks and tutorials, and short contributed talks from participants. The full schedule is posted below, the order of contributed talks will be published shortly.
                         </p>
-                        <h5>Invited Speakers: </h5>
+                        
+
+                       
+
+
+
+
+
+<h4>Schedule</h4>
+  <div class="schedule">
+<!-- Monday -->
+  <!-- <div class="day">Monday 02/06</div> -->
+<div class="daylabel"><div>Monday 02/06</div></div>
+<div class="day">
+    <div class="block coffee" style="grid-column: 1 / span 29"><div class="time">09:30</div><div class="label">Coffee</div></div>
+    <div class="block welcome" style="grid-column: 30 / span 30"><div class="time">10:00</div><div class="label">Welcome talk</div></div>
+    <div class="block invited" style="grid-column: 60 / span 60"><div class="time">10:30</div><div class="label"><a href="#jungers">Invited talk:<br><br> Raphaël Jungers</a></div></div>
+    <div class="block participant" style="grid-column: 120 / span 30"><div class="time">11:30</div><div class="label">Introductions</div></div>
+    <div class="block lunch" style="grid-column: 150 / span 60"><div class="time">12:00</div><div class="label">Lunch</div></div>
+    <div class="block invited" style="grid-column: 210 / span 60"><div class="time">14:00</div><div class="label"><a href="#jungers">Open problem talk:<br> Raphaël Jungers</a></div></div>
+    <div class="block coffee" style="grid-column: 270 / span 30"><div class="time">15:00</div><div class="label">Coffee</div></div>
+    <div class="block participant" style="grid-column: 300 / span 60"><div class="time">15:30</div><div class="label"><a href="#matrix-semigroups">Participant talks<br>Matrix semigroups and finite automata</a></div></div>
+</div>
+
+<!-- Tuesday -->
+<div class="daylabel"><div>Tuesday 03/06</div></div>
+<div class="day">
+    <div class="block invited" style="grid-column: 1 / span 59"><div class="time">09:30</div><div class="label"><a href="#clemente">Invited tutorial:<br> Lorenzo Clemente</a></div></div>
+    <div class="block coffee" style="grid-column: 60 / span 30"><div class="time">10:30</div><div class="label">Coffee</div></div>
+    <div class="block participant" style="grid-column: 90 / span 60"><div class="time">11:00</div><div class="label"><a href="#weighted-automata">Participant talks:<br> Weighted automata and power series</a></div></div>
+    <div class="block lunch" style="grid-column: 150 / span 60"><div class="time">12:00</div><div class="label">Lunch</div></div>
+    <div class="block invited" style="grid-column: 210 / span 60"><div class="time">14:00</div><div class="label"><a href="#clemente">Open problem talk:<br> Lorenzo Clemente</a></div></div>
+    <div class="block coffee" style="grid-column: 270 / span 30"><div class="time">15:00</div><div class="label">Coffee</div></div>
+    <div class="block participant" style="grid-column: 300 / span 60"><div class="time">15:30</div><div class="label"><a href="#register-automata">Participant talks: Register automata and verification</a></div></div>
+</div>
+
+<!-- Wednesday -->
+<div class="daylabel"><div>Wednesday 04/06</div></div>
+<div class="day"></div>
+<div class="day">
+<div class="block invited" style="grid-column: 1 / span 59"><div class="time">09:30</div><div class="label"><a href="#perrin">Invited talk:<br> Dominique Perrin</a></div></div>
+  <div class="block coffee" style="grid-column: 60 / span 30"><div class="time">10:30</div><div class="label">Coffee</div></div>
+  <div class="block participant" style="grid-column: 90 / span 60"><div class="time">11:00</div><div class="label"><a href="#vass-timed-automata">Participant talks: Vector addition systems and timed automata</a></div></div>
+  <div class="block lunch" style="grid-column: 150 / span 60"><div class="time">12:00</div><div class="label">Lunch</div></div>
+  <div class="block tour" style="grid-column: 210 / span 120"><div class="time">14:00</div><div class="label">Walking tour of Warsaw</div></div>
+</div>
+
+<!-- Thursday -->
+<div class="daylabel"><div>Thursday 05/06</div></div>
+<div class="day">
+  <div class="block invited" style="grid-column: 1 / span 59"><div class="time">09:30</div><div class="label"><a href="#perrin">Invited tutorial:<br> Dominique Perrin</a></div></div>
+  <div class="block coffee" style="grid-column: 60 / span 30"><div class="time">10:30</div><div class="label">Coffee</div></div>
+  <div class="block invited" style="grid-column: 90 / span 60"><div class="time">11:00</div><div class="label"><a href="#kelmendi">Invited talk:<br> Edon Kelmendi</a></div></div>
+  <div class="block lunch" style="grid-column: 150 / span 60"><div class="time">12:00</div><div class="label">Lunch</div></div>
+  <div class="block invited" style="grid-column: 210 / span 60"><div class="time">14:00</div><div class="label"><a href="#kelmendi">Invited tutorial:<br> Edon Kelmendi</a></div></div>
+  <div class="block coffee" style="grid-column: 270 / span 30"><div class="time">15:00</div><div class="label">Coffee</div></div>
+  <div class="block participant" style="grid-column: 300 / span 60"><div class="time">15:30</div><div class="label"><a href="#recurrence-loop-invariants">Participant talks: Recurrence sequences and loop invariants</a></div></div>
+  <!-- <div class="block dinner" style="grid-column: 450 / span 60"><div class="time">19:00</div><div class="label">Dinner (7pm)</div></div> -->
+</div>
+
+<!-- Friday -->
+<div class="daylabel"><div>Friday 06/06</div></div>
+
+<div class="day">
+  <div class="block invited" style="grid-column: 1 / span 59"><div class="time">09:30</div><div class="label"><a href="#bell">Invited talk:<br> Paul Bell</a></div></div>
+  <div class="block coffee" style="grid-column: 60 / span 30"><div class="time">10:30</div><div class="label">Coffee</div></div>
+  <div class="block participant" style="grid-column: 90 / span 60"><div class="time">11:00</div><div class="label"><a href="#tbd-friday">Participant talks</a></div></div>
+  <div class="block lunch" style="grid-column: 150 / span 60"><div class="time">12:00</div><div class="label">Lunch</div></div>
+  <div class="block invited" style="grid-column: 210 / span 60"><div class="time">14:00</div><div class="label"><a href="#bell">Invited tutorial:<br> Paul Bell</a></div></div>
+  <div class="block special" style="grid-column: 270 / span 25"><div class="time">15:00</div><div class="label">Closing</div></div>
+</div>
+
+  </div>
+<p>
+The schedule is subject to minor adjustments. The schedule of participant talks will be published shortly.
+</p>
+<p>
+Participants are invited to go to lunch in the local area in small groups. There are many options within a short walk of the venue and there is a modern food court at the nearby <a href="https://elektrowniapowisle.com/food-hall-i-bary/">Elektrownia Powiśle</a>. 
+</p>
+
+
+                    </div>
+<div id="invited-talks">
+
+<h4>Invited Speakers: </h4>
 
                         <div class="speaker-grid" id="jungers">
                             <div class="speaker-header">
-                                <a href="https://perso.uclouvain.be/raphael.jungers/content/home/">Raphaël Jungers</a>, UCLouvain<br>
+                                <a href="https://perso.uclouvain.be/raphael.jungers/content/home/">Raphaël Jungers</a>, UCLouvain, Belgium<br>
                                 Monday
                             </div>
                             <div class="speaker-photo">
@@ -82,6 +177,7 @@
                                 <strong>Talk: Path-complete optimization for complex systems control: a bridge between symbolic dynamics and numerical optimization</strong>
                                 <details>
                                     <summary>Abstract (Click to expand)</summary>
+
                                     I'll present Path-Complete control, a meta-optimization technique aiming at designing efficient optimization programs, initially introduced for stability analysis of switched linear systems, but later generalized to other control problems. These optimization programs are conveniently represented by an automaton. I'll review the seminal characterization results, which establish equivalence between universal automata and valid stability certificates. I'll provide a Lyapunov-theoretic interpretation of these stability criteria thanks to automata-theoretic tools. I will introduce the comparison problem, namely to characterize the partial order between path-complete criteria, in terms of their conservativeness. We will see that this partial order actually depends on the used template of Lyapunov functions, making another interesting connection between algebraic geometry and combinatorics. If time allows I will comment on generalization of the technique to other problems/systems in Control Engineering.
                                 </details>
                             </div>
@@ -89,6 +185,7 @@
                                 <strong>Open problem talk: Open problems on Path-Complete Lyapunov Functions: canonical forms, ordering of quadratic Path-Complete Lyapunov Functions, and statistical Ordering</strong>
                                 <details>
                                     <summary>Abstract (Click to expand)</summary>
+
                                     <p>
                                         I will introduce several open problems on Path-Complete Lyapunov Functions: from elementary ones to more open, prospective ones. They all blend symbolic dynamics, automata theory, algebraic geometry and (linear) dynamical systems theory.
                                     </p>
@@ -104,7 +201,7 @@
 
                         <div class="speaker-grid" id="clemente">
                             <div class="speaker-header">
-                                <a href="https://sites.google.com/view/lorenzoclemente/">Lorenzo Clemente</a>, Warsaw<br>
+                                <a href="https://sites.google.com/view/lorenzoclemente/">Lorenzo Clemente</a>, University of Warsaw, Poland<br>
                                 Tuesday
                             </div>
                             <div class="speaker-photo">
@@ -114,7 +211,8 @@
                                 <div class="speaker-talk">
                                 <strong>Tutorial: Zeroness of shuffle-finite power series in noncommuting variables and applications to nonlinear control theory</strong>
                                 <details>
-                                    <summary>Abstract (Click to expand)</summary><p>
+                                    <summary>Abstract (Click to expand)</summary>
+                                    <p>
                                     We present recent results on shuffle-finite power series in noncommuting variables,
                                     a nonlinear generalisation of Schutzenberger's rational series motivated by enumerative combinatorics, concurrency theory, and control theory.
                                     In the first part of the presentation, we show that the zeroness problem is decidable for this class,
@@ -137,7 +235,8 @@
                             <div class="speaker-tutorial">
                                 <strong>Open problem talk: Computing a finite basis for the invariant ideal of polynomial ODEs</strong>
                                 <details>
-                                    <summary>Abstract (Click to expand)</summary><p>
+                                    <summary>Abstract (Click to expand)</summary>
+                                    <p>
                                     For a given system of polynomial ODEs and a given initial condition x(0) from Q^k there is exactly one tuple of power series x from Q[[t]]^k satisfying the ODEs whose constant term equals the initial condition.
 The invariant ideal Inv is the set of all polynomials p vanishing on this tuple of power series p(x) = 0.
 Thanks to the Hilbert finite basis theorem, Inv is finitely generated as an ideal.
@@ -161,7 +260,7 @@ and Skolem-hard for polynomial recursive sequences (Müllner, Moosbrygger, Kovac
 
                         <div class="speaker-grid" id="perrin">
                             <div class="speaker-header">
-                                <a href="https://www-igm.univ-mlv.fr/~perrin/">Dominique Perrin</a>, Universite Gustave Eiffel<br>
+                                <a href="https://www-igm.univ-mlv.fr/~perrin/">Dominique Perrin</a>, Universite Gustave Eiffel, France<br>
                                 Wednesday and Thursday
                             </div>
                             <div class="speaker-photo">
@@ -172,6 +271,7 @@ and Skolem-hard for polynomial recursive sequences (Müllner, Moosbrygger, Kovac
                                 <strong>Talk Title: Densities of rational languages under shift invariant measures</strong>
                                 <details>
                                     <summary>Abstract (Click to expand)</summary>
+
                                     We study density of rational languages under shift invariant probability measures on spaces of
                                     two-sided infinite words, which generalizes the classical notion of density studied in formal languages
                                     and automata theory. The density for a language is defined as the limit in average (if it exists) of
@@ -187,6 +287,7 @@ and Skolem-hard for polynomial recursive sequences (Müllner, Moosbrygger, Kovac
                                 <strong>Tutorial Title: Densities of rational languages by examples</strong>
                                 <details>
                                     <summary>Abstract (Click to expand)</summary>
+
                                     We develop on examples the techniques of computation for the density of a rational
                                     language: computation of the J-class of an irreducible shift in a finite monoid,
                                     computation of the substitutions making a minimal skew product a morphic shift,
@@ -197,7 +298,7 @@ and Skolem-hard for polynomial recursive sequences (Müllner, Moosbrygger, Kovac
 
                         <div class="speaker-grid" id="kelmendi">
                             <div class="speaker-header">
-                                <a href="https://edon.github.io/">Edon Kelmendi</a>, Queen Mary, University of London<br>
+                                <a href="https://edon.github.io/">Edon Kelmendi</a>, Queen Mary, University of London, UK<br>
                                 Thursday
                             </div>
                             <div class="speaker-photo">
@@ -208,6 +309,7 @@ and Skolem-hard for polynomial recursive sequences (Müllner, Moosbrygger, Kovac
                                 <strong>Talk Title: Decision Problems for Linear Dynamical Systems</strong>
                                 <details>
                                     <summary>Abstract (Click to expand)</summary>
+
                                     This talk will be a general survey of what can we decide about iterations of linear maps. Given a point x in euclidean space and a matrix A, we will ask which properties of the sequence A<sup>n</sup>x are decidable. Equivalently, what can we formally verify for a class of programs made out of a single loop inside which only linear updates are allowed. I will begin by translating problems about weighted automata, Markov chains, and linear recurrence sequences, into questions about the sequence A<sup>n</sup>x, and then continue with describing the principal techniques, focusing on open questions and where the difficulties lie.
                                 </details>
                             </div>
@@ -215,6 +317,7 @@ and Skolem-hard for polynomial recursive sequences (Müllner, Moosbrygger, Kovac
                                 <strong>Tutorial Title: Algebraic Sets and Linear Maps</strong>
                                 <details>
                                     <summary>Abstract (Click to expand)</summary>
+
                                     This tutorial will be about a single problem: given algebraic sets S, T, and a linear map A, does there exist a point in S whose orbit under A reaches T. One can ask more precisely: (1) reaches at least 1 time, (2) at least 10 times, (3) infinitely many times, (4) with positive frequency (e.g. 20% of the time the trajectory is in T). We do not yet know whether there exists a procedure for Problem (1). Problem (2) is undecidable. Problem (3) is known to be decidable for diagonalisable maps, and Problem (4) is decidable. I will explain the core ideas and techniques behind these results.
                                 </details>
                             </div>
@@ -222,7 +325,7 @@ and Skolem-hard for polynomial recursive sequences (Müllner, Moosbrygger, Kovac
 
                         <div class="speaker-grid" id="bell">
                             <div class="speaker-header">
-                                <a href="https://pcbell.github.io/">Paul Bell</a>, Keele<br>
+                                <a href="https://pcbell.github.io/">Paul Bell</a>, Keele University, UK<br>
                                 Friday
                             </div>
                             <div class="speaker-photo">
@@ -233,6 +336,7 @@ and Skolem-hard for polynomial recursive sequences (Müllner, Moosbrygger, Kovac
                                 <strong>Talk Title: Connections between decision problems on quantum and probabilistic automata</strong>
                                 <details>
                                     <summary>Abstract (Click to expand)</summary>
+
                                     We will survey some recent results concerning decision problems for probabilistic and quantum automata. Our aim will be to map the boundary between tractable problems, for which an efficient decision procedure is known, and those which are intractable, via reductions of NP-hard, PSPACE-hard, or undecidable problems. We will see a number of proof strategies, drawing on ideas from linear algebra, branches of number theory, complexity theory, and graph theory, and identify avenues for future research directions.
                                 </details>
                             </div>
@@ -240,100 +344,117 @@ and Skolem-hard for polynomial recursive sequences (Müllner, Moosbrygger, Kovac
                                 <strong>Tutorial Title: Injectivity problems for quantum automata</strong>
                                 <details>
                                     <summary>Abstract (Click to expand)</summary>
+
                                     We will see details of how to prove the undecidability of the injectivity problem for quantum automata using a reduction from the mixed Post’s correspondence problem from formal language theory. This will be done in two ways; firstly via a direct encoding and using free rotation groups and secondly via an encoding using rational polynomial packing functions, which removes the need to have a non-rational real algebraic initial state vector of the automata.
                                 </details>
                             </div>
                         </div>
 
 
-                        <h5>Participant talks: </h5>
+</div>
+    <div id="participant-talks">
+
+ <h4>Participant talks: </h4>
                          <p>
-                            We encourage contributed talks which <strong>do not fit in the format of more formal conferences</strong>, such as: 
-                            <ul style="margin-bottom: 4px;">
-                              <li>Reports on failed attempts</li>
-                              <li>Presentations of old results that did not receive enough attention</li>
-                              <li>Open-ended potential research directions</li>
-                              <li>Unexpected connections between different areas</li>
-                              <li>Open problems and possible lines of attack</li>
-                            </ul>
-                            Talks on recent results are also welcome.
+                            We encouraged contributed talks which <strong>do not fit in the format of more formal conferences</strong>, such as reports on failed attempts, presentations of old results that did not receive enough attention, open-ended potential research directions, unexpected connections between different areas, open problems and possible lines of attack.
                         </p>
 
 
-<h5>Schedule</h5>
-  <div class="schedule">
-<!-- Monday -->
-  <!-- <div class="day">Monday 02/06</div> -->
-<div class="daylabel"><div>Monday 02/06</div></div>
-<div class="day">
-    <div class="block coffee" style="grid-column: 1 / span 29"><div class="time">09:30</div><div class="label">Coffee</div></div>
-    <div class="block welcome" style="grid-column: 30 / span 30"><div class="time">10:00</div><div class="label">Welcome talk</div></div>
-    <div class="block invited" style="grid-column: 60 / span 60"><div class="time">10:30</div><div class="label"><a href="#jungers">Invited talk: Raphaël Jungers</a></div></div>
-    <div class="block participant" style="grid-column: 120 / span 30"><div class="time">11:30</div><div class="label">Introductions</div></div>
-    <div class="block lunch" style="grid-column: 150 / span 60"><div class="time">12:00</div><div class="label">Lunch</div></div>
-    <div class="block invited" style="grid-column: 210 / span 60"><div class="time">14:00</div><div class="label"><a href="#jungers">Open problem: Raphaël Jungers</a></div></div>
-    <div class="block coffee" style="grid-column: 270 / span 30"><div class="time">15:00</div><div class="label">Coffee</div></div>
-    <div class="block participant" style="grid-column: 300 / span 60"><div class="time">15:30</div><div class="label">Participant talks</div></div>
+
+<h5 id="matrix-semigroups">Matrix semigroups and finite automata</h5>
+<span class="session-time">Monday 15:30</span>
+<details><summary><a href="https://www.mimuw.edu.pl/~wczerwin/">Wojciech Czerwiński</a> (University of Warsaw, Poland) 
+    <br><strong>The path equivalence problem and Laurent polynomials</strong></summary>
+    <p>Abstract: I will talk about our failed attempt to solve the path equivalence problem (given two systems, do they have the same number of accepting paths for each input word) for any nontrivial extension of finite automata. Although we did not obtain any algorithm we found interesting connections with Laurent polynomials and some mysterious connections with functional analysis, I will show you that. 
+    </p><p>
+I believe that this direction of research is an important and fundamental one and should be pursued, but at the moment I have no clue how to attack it.
+</p></details>
+<details><summary><a href="https://renisk.github.io/">Reino Niskanen</a> (Liverpool John Moores University, UK)<br> <strong> A different way of simulating Turing machines with matrices</strong></summary>
+    <p>Abstract: It is well-known that a lot of algorithmic problems for matrix semigroups are undecidable. For example, when given a finitely generated matrix semigroup $S=\{M_1,\ldots,M_k\}$ and a matrix M one could ask whether the given matrix belongs to the generated semigroup, i.e., whether $M\in\langle S\rangle$ holds or not? The undecidability results in the literature tend to utilise embeddings from $\{a,b\}^*\times\{a,b\}^*$ into the desired matrix semigroup whilst ensuring that the structural constraints of the semigroup are preserved. In this talk, I will give a brief overview of some existence and non-existence results for embeddings and show how a non-standard embedding can lead to an undecidability result where a Turing machine is simulated using matrices.</p></details>
+<details><summary><a href="https://math.biu.ac.il/en/node/3469">Alexander Guterman</a> (Bar-Ilan University, Israel)<br> <strong> Combinatorial indices for matrix semigroups and finite automata</strong></summary>
+    <p>Abstract: There is a number of important combinatorial matrix classes such as indecomposable matrices, primitive matrices, scrambling matrices, chainable matrices, etc., that are useful both in fundamental investigations and in applications. The central approach to study these classes is via certain their numerical invariants. To list a few of them, we mention matrix exponent, scrambling index and solidarity index.</p><p>
+In the talk we give a short exposition of these notions and their applications to the theory of non-negative matrix semigroups and theory of finite automata.</p><p>
+We illustrate the importance of this approach by presenting several recent results related to the extensions of classical results due to Perron, Frobenius and Wielandt to matrix semigroups.
+This is a joint work with Yu.A. Alpin, A.M. Maksaev, E.R. Shafeev.
+</p></details>
+
+<h5 id="weighted-automata">Weighted automata and power series</h5>
+<span class="session-time">Tuesday 11:00</span>
+<details><summary><a href="https://goravjindal.github.io/">Gorav Jindal</a> (University of Warsaw, Poland)<br> <strong> Rationality of Formal Power Series over Subsemirings</strong></summary>
+    <p>Abstract: For an alphabet $\Sigma$, a formal power series over a semiring $R$ is a function $f: \Sigma^* \to R$. Weighted automata over $R$ are used to recognize such series. The well-known Fliess' theorem states that when $R$ is a field, the minimal automaton recognizing $f$ has a size equal to the rank of its associated Hankel matrix $H_f$.
+Given a weighted automaton over $R$ recognizing a formal power series $f$, and a subsemiring $S$ of $R$, we investigate the question of whether $f$ is also rational over $S$. This means determining if there exists a weighted automaton with entries in $S$ that also recognizes $f$, under the promise that the image of $f$ is contained within $S$, i.e., $f(\Sigma^*) \subseteq S$.</p><p>
+In this talk, we primarily consider the cases when $R = \mathbb{R}$ is the real field and $S = \mathbb{R}_{\geq 0}$ is the set of non-negative reals. We discuss the challenges and adaptations involved in relating the size of weighted automata over $\mathbb{R}_{\geq 0}$ to specific factorizations of the Hankel matrix, such as non-negative and residual factorizations. We will discuss some failed attempts to solve this problem and some open questions.
+</p></details>
+<details><summary>Yahia Idriss Benalioua (Aix-Marseille University, France) <br>
+    <strong> On the complexity of computing the linear hull of weighted automata over $\mathbb{Q}$</strong></summary>
+    <p>Abstract: The linear hull (LH) of a weighted automaton (WA) is an invariant, recently introduced by [Bell & Smertnig, 2021], that allows to decide the unambiguity or sequentiality of WA over a field. We showed in [Benalioua, Lhote & Reynier, 2024] that the LH of a WA can be used to solve the register minimization problem for cost register automata (CRA) and gave a 2EXPTIME procedure for its computation. However, the question of the tightness of this complexity bound remains open.
+In this talk, I will present the idea underlying this procedure, how it relates to minimization problems for CRA and I will show how its complexity is linked to bounding the number of irreducible components of the linear Zariski closure of a finitely generated group of matrices.<br>
+If time permits, I will also mention how those results generalize to weighted tree automata and the challenges faced in this setting.
+</p></details>
+<details><summary><a href="https://www.mimuw.edu.pl/~arka/">Arka Ghosh</a> (University of Bordeaux, France)<br> <strong> Residual weighted finite automata</strong></summary>
+    <p>Abstract: A weighted finite automata (WFA) is called residual if the cone generated by the rows of its Hankel matrix is finitely generated. Residual WFAs are better behaved than WFAs in general. For example, they admit unique conical basis as a consequence of which they are learnable. They are closed under reversal, as a consequence of which non-negativity of residual WFAs is decidable. The questions we are interested in are whether residuality is a decidable property, and whether positivity of residual automata can be decided.
+
+</p></details>
+
+<h5 id="register-automata">Register automata and verification</h5>
+<span class="session-time">Tuesday 15:30</span>
+<details><summary><a href="https://mimuw.edu.pl/~lukamin/">Łukasz Kamiński</a> (University of Warsaw, Poland)<br> <strong> Semilinear and rational sets with data</strong></summary>
+    <p>Abstract: The family of semilinear sets admits several equivalent characterisations: sets definable in Presburger arithmetic, rational subsets of the monoid (N^d, +), Parikh images of regular languages. This notion can be generalised to data vectors, where coordinates are indexed by an orbit-finite set. However, in this extended setting, the classical equivalences break down. For instance, semilinear sets of data vectors form a strict subset of the family of rational sets of data vectors. The latter are conjectured to coincide with the Parikh images of languages recognised by register automata. These families remain poorly understood and continue to offer a rich source of open problems. </p></details>
+<details><summary><a href="https://www.cs.ox.ac.uk/people/jingjie.yang/">Jingjie Yang</a> (University of Oxford, UK)<br> <strong> Orbit-finite-dimensional vector spaces</strong></summary>
+    <p>Whilst N^2 is an infinite set, under bijective renamings it only consists of two orbits: the pairs with distinct entries, and those with the same entry repeated twice. As such N^2 is an orbit-finite set; in turn, the vector space with basis N^2 can be called orbit-finite-dimensional. I will show such spaces have finite length, so language equivalence for weighted register automata is decidable over many infinite alphabets. This extends the work of Bojańczyk, Fijalkow, Klin, and Moerman [LICS’21/TheoretiCS’24].
+</p></details>
+<details><summary><a href="https://antonio-casares.github.io/">Antonio Casares</a> (University of Warsaw, Poland) <br> <strong> Safety and liveness. What are these things</strong>?</summary>
+    <p>Abstract: In this talk, I will define safe and live languages and present safety-liveness decompositions. The content of this talk is mostly folklore, but it might also include results from:
+<ul>
+    <li>B. Alpern, F.B. Schneider: Defining liveness, Inf. Process. Lett., 1985</li>
+    <li>T. Henzinger, N. Mazzocchi and N.E. Saraç: Quantitative Safety and Liveness, FoSSaCS, 2023</li>
+</ul>
+
+</p></details>
+
+<h5 id="vass-timed-automata">Vector addition systems and timed automata</h5>
+<span class="session-time">Wednesday 11:00</span>
+<details><summary><a href="https://www.mimuw.edu.pl/pl/pracownicy/382596/">Łukasz Orlikowski</a> (University of Warsaw, Poland)<br> <strong> Low-Dimensional VASS: Where Our Tools Fail Us</strong></summary>
+    <p>Abstract: The complexity of the reachability problem in Vector Addition Systems with States (VASSs) remained an open question for several decades. Although the problem was eventually shown to be Ackermann-complete, many fundamental questions about VASSs are still unresolved. In fact, even the reachability problem itself is not yet fully understood. A key indication of this is the presence of significant complexity gaps for low-dimensional cases.</p><p>
+In this talk, I will briefly outline the current state of the art regarding the reachability problem in low-dimensional VASSs and discuss possible future research directions. The main focus will be on identifying where existing techniques fall short and why current complexity bounds remain unimproved.
+</p></details>
+<details><summary><a href="https://www.labri.fr/en/profil/Biziere_ID1678444387">Clotilde Biziere</a> University of Bordeaux, France)<br> <strong> TBD</strong></summary>
+    <p></p></details>
+<details><summary><a href="https://lama-umr8050.fr/membres/scoones.andrew">Andrew Scoones</a> (University Paris-Est - Créteil, France)<br> <strong> Reachability for Multi-Priced Timed Automata and Diophantine Approximation</strong></summary>
+    <p>Abstract: Timed automata are a widely studied model of real-time systems that extend classical finite state-automata with real-valued variables, called clocks, that evolve with derivative one and which can be queried and reset along transitions. Multi-Priced Timed Automata  (MPTA) further extend timed automata with write-only variables, called observers, that have a non-negative slope that can change from one location to another. We consider the domination problem: given an MPTA and a target t, is there a run on the automata such that the value of the run is less than t pointwise? This is known to be undecidable if negative rates are allowed.
+    </p><p>
+We introduce a variant of this problem by introducing a slack parameter. This allows us to transfer the problem to a Diophantine problem. While we show that this problem is still undecidable, we show decidability in the bounded case, through methods from Diophantine approximation and the geometry of numbers. In this talk, I will focus on Diophantine Approximation methods that are not in the paper, but may be able to be translated back into results on MPTA.
+</p></details>
+
+<h5 id="recurrence-loop-invariants">Recurrence sequences and loop invariants</h5>
+<span class="session-time">Thursday 15:30</span>
+<details><summary><a href="https://georgekenison.github.io/">George Kenison</a> (Liverpool John Moores University, UK)<br> <strong> The Membership Problem for Hypergeometric Sequences</strong></summary>
+    <p>Abstract: Take as inputs a rational-valued recurrence sequence and a rational target, the Membership Problem asks to procedurally determine whether the specified target is a term in the input sequence. In this talk we will restrict our attention to hypergeometric sequences (the class of sequences that obey a first-order linear recurrence relation with polynomial coefficients).  In this talk, we will discuss both the difficulty with settling decidability and survey results in this setting.  Time permitting, we will outline the approaches in recent works as well as directions for future work.</p><p>
+Results surveyed in this talk are taken from collaborations with J. Konieczny, F. Luca, K. Nosan, A. Scoones, M. Shirmohammadi, and J. Worrell.
+</p></details>
+<details><summary><a href="https://www.cs.ox.ac.uk/people/piotr.bacik/">Piotr Bacik</a> (University of Oxford, UK and Max Planck Institute for Software Systems, Saarland University, Germany)<br> <strong> On the complexity of the Skolem Problem</strong></summary>
+    <p>The Skolem Problem asks whether a given linear recurrence sequence has a zero term. Decidability of this problem has famously been open for over 90 years. Special cases are known - in particular for sequences of order at most 4. By following the proof it is easy to determine that the complexity of the Skolem Problem for such sequences is in NP^{RP}. To date, this is the best known complexity upper bound.
+</p><p>
+In the talk I will discuss a soon-to-be submitted result showing the Skolem Problem at order 4 is in coRP, and directions for improvements.
+</p></details>
+<details><summary><a href="https://www.vcla.at/msca/researchers/anton-varonka/">Anton Varonka</a> (TU Wien, Austria)<br> <strong> Invariants without a loop</strong></summary>
+    <p>Abstract: Guided by the question “What polynomial invariants can loops with linear updates have?”, we are desperately searching for methods of proving that certain d-variate polynomials cannot be loop invariants of any non-trivial linear loop with d variables. A linear loop is described by (A, x) where A is a square matrix of size d and x is a vector of size d, both having rational entries. A polynomial invariant P is a polynomial in d variables such that P vanishes on each A^nx.</p></details>
+
+<h5 id="tbd-friday">TBD</h5>
+<span class="session-time">Friday 11:00</span>
+<details><summary><a href="https://sites.google.com/view/qiyitang/">Qiyi Tang</a> (University of Liverpool, UK)<br> <strong> TBD</strong></summary>
+    <p></p></details>
+<details><summary><a href="https://www.mimuw.edu.pl/~bojan/">Mikołaj Bojańczyk</a> (University of Warsaw, Poland)<br> <strong> Two-party computation for functions with string inputs</strong></summary>
+    <p>I will describe a model of computation, which describes functions that input strings, and output elements from some domain, such as the Booleans, or strings, or a field. The idea is that there are two parties, Alice and Bob, who cooperate to compute the output of the function. For a given input string, an adversary chooses a partition w=w1w2, and sends the words w1 and w2 to Alice and Bob, respectively. Alice and Bob then exchange a constant number of messages, using some operations in the output domain, in a way that results in the output of the function. We will show that for various output domains, the model coincides with standard notions. In particular, for Boolean outputs, it gives regular languages, and for outputs in a field, it gives weighted automata.
+Joint work with Aliaume Lopez, Rafał Stefański, and Omid Yaghoubi.
+</p></details>
+
+
 </div>
 
-<!-- Tuesday -->
-<div class="daylabel"><div>Tuesday 03/06</div></div>
-<div class="day">
-    <div class="block invited" style="grid-column: 1 / span 59"><div class="time">09:30</div><div class="label"><a href="#clemente">Invited tutorial: Lorenzo Clemente</a></div></div>
-    <div class="block coffee" style="grid-column: 60 / span 30"><div class="time">10:30</div><div class="label">Coffee</div></div>
-    <div class="block participant" style="grid-column: 90 / span 60"><div class="time">11:00</div><div class="label">Participant talks</div></div>
-    <div class="block lunch" style="grid-column: 150 / span 60"><div class="time">12:00</div><div class="label">Lunch</div></div>
-    <div class="block invited" style="grid-column: 210 / span 60"><div class="time">14:00</div><div class="label"><a href="#clemente">Open problem: Lorenzo Clemente</a></div></div>
-    <div class="block coffee" style="grid-column: 270 / span 30"><div class="time">15:00</div><div class="label">Coffee</div></div>
-    <div class="block participant" style="grid-column: 300 / span 60"><div class="time">15:30</div><div class="label">Participant talks</div></div>
-</div>
-
-<!-- Wednesday -->
-<div class="daylabel"><div>Wednesday 04/06</div></div>
-<div class="day"></div>
-<div class="day">
-<div class="block invited" style="grid-column: 1 / span 59"><div class="time">09:30</div><div class="label"><a href="#perrin">Invited talk: Dominique Perrin</a></div></div>
-  <div class="block coffee" style="grid-column: 60 / span 30"><div class="time">10:30</div><div class="label">Coffee</div></div>
-  <div class="block participant" style="grid-column: 90 / span 60"><div class="time">11:00</div><div class="label">Participant talks</div></div>
-  <div class="block lunch" style="grid-column: 150 / span 60"><div class="time">12:00</div><div class="label">Lunch</div></div>
-  <div class="block tour" style="grid-column: 210 / span 120"><div class="time">14:00</div><div class="label">Walking tour of Warsaw</div></div>
-</div>
-
-<!-- Thursday -->
-<div class="daylabel"><div>Thursday 05/06</div></div>
-<div class="day">
-  <div class="block invited" style="grid-column: 1 / span 59"><div class="time">09:30</div><div class="label"><a href="#perrin">Invited tutorial: Dominique Perrin</a></div></div>
-  <div class="block coffee" style="grid-column: 60 / span 30"><div class="time">10:30</div><div class="label">Coffee</div></div>
-  <div class="block invited" style="grid-column: 90 / span 60"><div class="time">11:00</div><div class="label"><a href="#kelmendi">Invited talk: Edon Kelmendi</a></div></div>
-  <div class="block lunch" style="grid-column: 150 / span 60"><div class="time">12:00</div><div class="label">Lunch</div></div>
-  <div class="block invited" style="grid-column: 210 / span 60"><div class="time">14:00</div><div class="label"><a href="#kelmendi">Invited tutorial: Edon Kelmendi</a></div></div>
-  <div class="block coffee" style="grid-column: 270 / span 30"><div class="time">15:00</div><div class="label">Coffee</div></div>
-  <div class="block participant" style="grid-column: 300 / span 60"><div class="time">15:30</div><div class="label">Participant talks</div></div>
-  <!-- <div class="block dinner" style="grid-column: 450 / span 60"><div class="time">19:00</div><div class="label">Dinner (7pm)</div></div> -->
-</div>
-
-<!-- Friday -->
-<div class="daylabel"><div>Friday 06/06</div></div>
-
-<div class="day">
-  <div class="block invited" style="grid-column: 1 / span 59"><div class="time">09:30</div><div class="label"><a href="#bell">Invited talk: Paul Bell</a></div></div>
-  <div class="block coffee" style="grid-column: 60 / span 30"><div class="time">10:30</div><div class="label">Coffee</div></div>
-  <div class="block participant" style="grid-column: 90 / span 60"><div class="time">11:00</div><div class="label">Participant talks</div></div>
-  <div class="block lunch" style="grid-column: 150 / span 60"><div class="time">12:00</div><div class="label">Lunch</div></div>
-  <div class="block invited" style="grid-column: 210 / span 60"><div class="time">14:00</div><div class="label"><a href="#bell">Invited tutorial: Paul Bell</a></div></div>
-  <div class="block special" style="grid-column: 270 / span 25"><div class="time">15:00</div><div class="label">Closing</div></div>
-</div>
-
-  </div>
-<p>
-The schedule is subject to minor adjustments. The schedule of participant talks will be published shortly.
-</p>
-<p>
-Participants are invited to go to lunch in the local area in small groups. There are many options within a short walk of the venue and there is a modern food court at the nearby <a href="https://elektrowniapowisle.com/food-hall-i-bary/">Elektrownia Powiśle</a>. 
-</p>
 
 
-                    </div>
+
                     <div id="organisation">
                         <h3>Organisation</h3>
                         <p>
@@ -385,9 +506,12 @@ Participants are invited to go to lunch in the local area in small groups. There
                             </script> to email all three organisers.
                         </p>
                         <h5>Location:</h5>
-                        <p> The SAMSA workshop takes place in person at the Faculties of Modern Languages (Wydział Neofilologii) <a href="https://maps.app.goo.gl/MVnM9sSLngCAJpzw6">Address: 55 Dobra street</a> at the University of Warsaw, Poland.
+                        <p> The SAMSA workshop takes place in person at the Faculties of Modern Languages (Wydział Neofilologii).</p>
+                        <p> <a href="https://maps.app.goo.gl/MVnM9sSLngCAJpzw6">Address: 55 Dobra street</a> at the University of Warsaw, Poland. (The closest entrance is on Browarna.)
                         </p>
-
+                        <p>
+                            Most sessions will take place in Room 1.110 (first floor, zero indexed). Sessions on Tuesday afternoon will take place in the adjacent Room 1.120. 
+                        </p>
 
                         <div class="people">
                             <div class="person">
