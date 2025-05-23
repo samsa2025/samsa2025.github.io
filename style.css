@@ -603,6 +603,10 @@ a.email{
 	color: var(--accent);
 }
 
+#participant-talks details {
+	max-width: 1200px;
+}
+
 #participant-talks summary{
 	margin-bottom: 10px;;
 }
