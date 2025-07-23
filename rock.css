@@ -1,0 +1,612 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+:root {
+	--accent: #9d2c3e;
+    --back: #fff;
+}
+
+body {
+	margin:0px auto;
+	padding:0;
+	background: var(--back);
+	font-family: "Source Sans Pro","sans-serif";
+	font-size: 1.0em;
+	color:#2f2f2f;
+
+	/** to keep footer where it belongs to **/
+	position: relative;
+	height: 100%;
+}
+* {
+	margin:0;
+	padding:0;
+}
+
+.indent{
+	margin-left: 30px;
+}
+
+/** element defaults **/
+table {
+	width:100%;
+    border-collapse: collapse;
+	text-align:left;
+}
+
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+
+tr {
+    border-color:var(--accent);
+}
+
+th, td {
+	padding:5px 10px;
+}
+th {
+    color:var(--back);
+	border-top:1px solid #222;
+	background-color:#2F2F2F;
+}
+td {
+}
+code, blockquote {
+	padding: 0 10px;
+}
+blockquote p {
+	font-style:italic;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin:0;
+	height: 1%;
+}
+p {
+	line-height:1.44em;
+	margin-bottom:20px;
+}
+a {
+	color:var(--accent);
+}
+a:hover {
+	color:#000;
+}
+a:focus {
+	outline:none;
+}
+a.button { 
+    background-color: var(--accent);
+    border-radius: 5px;
+    color: var(--back);
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 22px;
+    font-size: 0.8em;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.button-reversed { 
+    background-color: #333;
+}
+
+a.button:hover {
+	background-color: #669D48;
+}
+
+a.button-reversed:hover {
+	background-color: #222;
+}
+fieldset {
+	display:block;
+	border:none;
+	border-top:1px solid #e0e0e0;
+}
+fieldset legend {
+	font-weight:bold;
+	padding-right:10px;
+	color:#999;
+}
+fieldset form {
+	padding-top:15px;
+}
+fieldset p label {
+	float:left;
+	width:150px;
+	font-family: "Source Sans Pro","sans-serif";
+}
+fieldset form input, fieldset form select, fieldset form textarea {
+	padding:5px;
+	color:#333333;
+	font-size:13px;
+	font-family: "Source Sans Pro","sans-serif";
+	border:1px solid #ddd;
+}
+fieldset form input.formbutton {
+border:none;
+    background-color: var(--accent);
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 22px;
+    font-size: 0.8em;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+
+}
+h1 {
+        color:#666;
+	font-size:2.4em;
+}
+h2 {
+	color:#2f2f2f;
+	font-size:1.6em;
+	font-weight:bold;
+	padding-bottom:10px;
+}
+h3 {
+	color:var(--accent);
+	font-size:1.5em;
+	padding-bottom:10px;
+}
+.key-info {
+	color:var(--accent);
+	font-size:1.4em;
+	padding-bottom:10px;
+        font-weight:bold;
+}
+.key-info-sm {
+	color:var(--accent);
+	font-size:1.2em;
+	padding-bottom:10px;
+        font-weight:bold;
+}
+h4 {
+	padding-bottom:10px;
+	font-size:1.4em;
+	color:#000;
+}
+h5 {
+	padding-bottom:10px;
+	font-size:1.2em;
+	color:#666666;
+}
+ul, ol {
+	margin:0 0 35px 35px;
+}
+li {
+	padding-bottom:5px;
+}
+
+
+.past-inf {
+        color: var(--accent);
+        font-weight: bold;
+}
+
+hr {
+    display: none;
+    background-color: #bbb;
+    color: #bbb;
+}
+
+
+/** wrapper **/
+div#wrapper {
+	margin:0px auto;
+	padding:0;
+}
+
+.width {
+	width:auto;
+	margin: 0 auto;
+}
+.it {
+	font-style: italic;
+}
+.muted {
+	font-size:0.9em;
+	color:grey;
+}
+.strong {
+	font-weight: bold;
+}
+tr.break {
+	background-color: #ccb49c;
+}
+
+
+/** header **/
+header {
+	padding:30px 17px 30px;
+	margin:0 auto;
+        text-align: center;
+        color:var(--back);
+        font-size: 30px;
+        font-weight: bold;
+}
+header h1 { 
+	text-align: right;
+}
+
+header h1 a,
+header h1 a:hover,
+header h1 a:visited {
+	color: var(--back);
+	font-size: 1.5em;
+	text-decoration: none;
+	letter-spacing:-2px;
+}
+
+header h2 {
+	color:var(--back);
+	text-align: right;
+	font-size: 0.8em;
+	font-weight: normal;
+	padding-bottom:0;
+	letter-spacing:0;
+}
+
+
+/** body **/
+#main {
+	padding: 0;
+	background: var(--accent);
+	min-height: 100%;
+}
+
+#content > div {
+	margin-bottom: 50px;
+}
+
+#content > div:last-child {
+	min-height:100vh;
+}
+
+/** past events **/
+ul.past-events {
+/*    list-style-type: none;*/
+}
+
+/** content+sidebar styles **/
+.column-right {
+	margin-left: 250px;
+	background-color: var(--back);
+}
+.column-left {
+	float:left;
+}
+aside#sidebar {
+  width: 250px;
+  position: fixed; /* Fix the sidebar vertically */
+  top: 0;  /* Stick the sidebar to the top */
+  bottom: 0; /* Optionally, stick it to the bottom (or you can leave this out if you only want to fix it at the top) */
+  left: 0; /* Fixed horizontally at the left */
+  /* Alternatively, you can use 'right: 0;' to fix it on the right side */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  color: white; /* Text color */
+  box-sizing: border-box; /* Make sure paddi*/
+  background: var(--accent);
+}
+nav#mainnav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav#mainnav li {
+	padding:0;
+	border-bottom: 1px solid var(--back);
+	border-top: 0px;
+}
+nav#mainnav li.selected-item  {
+	border-top:none;
+}
+nav#mainnav li.selected-item a,
+nav#mainnav li.selected-item a:hover {
+	color:var(--accent);
+	font-weight:bold;
+	background: var(--back);
+}
+nav#mainnav li a:hover {
+	background:var(--back);
+	color: #666666;
+	text-decoration:none;
+}
+nav#mainnav li a {
+	color: var(--back);
+	display: block;
+	padding: 15px 17px;
+	text-align: right;
+	font-weight:  bold;
+	text-decoration: none;
+}
+
+
+#content {
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+
+article {
+    padding: 10px 10px 30px;
+	font-size: 1.2em;
+border-bottom: 1px solid #eee;
+}
+
+article h2 {
+    padding-bottom: 0;
+	letter-spacing: -2px;
+   font-size: 2.5em;
+}
+
+article .article-info {
+  color: #C0c0c0;
+font-size: 0.92em;
+padding: 0px 0px 10px;
+}
+
+article .article-info a { 
+	color: #ccc;
+}
+
+
+
+/** footer **/
+footer {
+    padding:20px 0px;
+
+    /** to keep footer where it belongs to **/
+    /**
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+   *//
+}
+
+footer p {
+	color:#666;
+	margin:0;
+	font-size:0.8em;
+	text-align: center;
+}
+footer p a {
+	color:#666;
+	font-weight:bold;
+	text-decoration:none;
+	border-bottom:1px solid #999;
+}
+footer p a:hover { color:#333; border-bottom-color: #333; }
+
+
+/** clear fix **/
+.clear:after {
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clear {
+	clear: both;
+	display: inline-block;
+}
+.clear {
+	display: block;
+}
+
+
+.photo-header { 
+  width: 100%; /* Makes the image take up the full width of the parent container */
+  height: 0;
+  padding-top: 60%; /* This will set the height to 70% of the width (aspect ratio trick) */
+  background-image: url('geo.jpg'); /* Set the background image */
+  background-size: cover; /* Ensures the image fully covers the container */
+  background-position: center; /* Center the image */
+  position: relative;
+
+}
+
+
+
+.text-overlay {
+  position: absolute; /* Position text absolutely inside the .photo-element */
+  top: 40%; /* Vertically center the text */
+  left: 50%; /* Horizontally center the text */
+  transform: translate(-50%, -50%); /* Offset by 50% of the element’s size for true centering */
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 3.8em;
+  text-shadow: 2.5px 2.5px 0px white, -2.5px -2.5px 0px white, 2.5px -2.5px 0px white, -2.5px 2.5px 0px white; 
+}
+
+
+
+@media screen and (max-width: 740px) {
+
+	body { font-size: 0.9em; }	
+
+
+	.width { width:auto; padding-left: 10px; padding-right: 10px; }
+
+	.column-left, .column-right { margin:0px; }
+
+	header h1, header h2, nav#mainnav li a { text-align:center; }
+	
+	#column-right, aside#sidebar { position: relative; float: none; width: auto; margin-left: 0; }
+
+	
+}
+
+
+@media screen and (max-width: 540px) {
+
+	body { font-size: 0.8em; }
+
+	header, header h1 a, header h1 a:hover { text-align: center; padding: 10px 0 0 0; font-size: 1.1em; }
+
+
+	nav#mainnav ul li a { margin-top: 0; padding: 1em; }
+
+
+}
+.people {
+    display: flex;
+    flex-wrap: wrap; /* Wraps to next line on small screens */
+    gap: 10px; /* Small gap between people */
+    justify-content: flex-start; /* Ensures items stay packed together */
+}
+
+.person {
+    text-align: center;
+    flex: 0 0 auto; /* Prevents stretching */
+}
+
+a.email{
+	font-size: 0.8em;
+	font-family: monospace;
+}
+
+
+
+.schedule {
+  display: grid;
+  grid-template-columns: repeat(360, 1fr); /* 1 column per minute from 09:30 to 17:30 */
+  gap: 2px;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+}
+
+
+.day, .daylabel{
+  display: contents; /* Allows grid items inside to span across the shared grid */
+}
+
+.block  {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-column: span 1;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 4px;
+  overflow: hidden;
+}
+
+.daylabel > div {
+   grid-column: 1 / span 200;
+   font-size:16px;
+}
+
+.block .label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+}
+.block .label a {
+	color: white;
+  }
+
+.block .time {
+  font-size: 12px;
+  color: #eee;
+  padding: 2px 0;
+}
+
+/* Session types */
+.block.coffee       { background-color: #a1887f; }
+.block.lunch        { background-color: #4caf50; }
+.block.invited      { background-color: #1976d2; }
+.block.participant  { background-color: #f57c00; }
+.block.special      { background-color: #9c27b0; }
+.block.welcome      { background-color: #00796b; }
+.block.other        { background-color: #607d8b; }
+.block.open         { background-color: #388e3c; }
+.block.dinner       { background-color: #c2185b; }
+.block.tour         { background-color: #6d4c41; }
+
+
+.speaker-grid {
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: start;
+}
+
+.speaker-header {
+    grid-column: 1 / -1; /* spans all columns */
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.speaker-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.speaker-talk, .speaker-tutorial {
+    font-size: 0.95rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .speaker-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .speaker-header {
+        grid-column: 1;
+    }
+
+    .speaker-photo img {
+        max-width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.session-time {
+	font-size: 1.1em;
+	color: #666;
+	margin-bottom: 5px;
+	display: block;
+}
+.session-time::after{
+	content: " (Click titles to expand abstracts)";
+	font-size:0.8em;
+	color:#555
+}
+#participant-talks h5 { 
+	padding-bottom: 2px;
+	margin-top: 5px;
+	color: var(--accent);
+}
+
+#participant-talks details {
+	max-width: 1200px;
+}
+
+#participant-talks summary{
+	margin-bottom: 10px;;
+}
