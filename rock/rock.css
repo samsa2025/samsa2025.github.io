@@ -17,6 +17,18 @@ body {
 	position: relative;
 	height: 100%;
 }
+
+.bigbox {
+	border: 5px solid var(--accent);
+	padding: 10px;
+}
+.bigbox > div {
+	background-color: var(--accent);
+	color:white;
+	font-size: huge;
+	padding: 20px;
+}
+
 * {
 	margin:0;
 	padding:0;

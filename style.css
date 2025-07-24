@@ -17,6 +17,13 @@ body {
 	position: relative;
 	height: 100%;
 }
+
+.bigbox{
+	background-color: var(--accent);
+	color:white;
+	font-size: huge;
+}
+
 * {
 	margin:0;
 	padding:0;
