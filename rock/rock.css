@@ -424,7 +424,7 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
   width: 100%; /* Makes the image take up the full width of the parent container */
   height: 0;
   padding-top: 60%; /* This will set the height to 70% of the width (aspect ratio trick) */
-  background-image: url('geo.jpg'); /* Set the background image */
+  background-image: url('/geo.jpg'); /* Set the background image */
   background-size: cover; /* Ensures the image fully covers the container */
   background-position: center; /* Center the image */
   position: relative;
@@ -459,7 +459,9 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 	
 	#column-right, aside#sidebar { position: relative; float: none; width: auto; margin-left: 0; }
 
-	
+	.text-overlay {
+		font-size: 3em;
+	}
 }
 
 
@@ -472,6 +474,10 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 
 	nav#mainnav ul li a { margin-top: 0; padding: 1em; }
 
+
+	.text-overlay {
+		font-size: 2em;
+	}
 
 }
 .people {
