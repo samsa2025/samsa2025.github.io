@@ -566,16 +566,16 @@ a.email{
 }
 
 /* Session types */
-.block.coffee       { background-color: #a1887f; }
-.block.lunch        { background-color: #4caf50; }
-.block.invited      { background-color: #1976d2; }
-.block.participant  { background-color: #f57c00; }
-.block.special      { background-color: #9c27b0; }
-.block.welcome      { background-color: #00796b; }
-.block.other        { background-color: #607d8b; }
-.block.open         { background-color: #388e3c; }
-.block.dinner       { background-color: #c2185b; }
-.block.tour         { background-color: #6d4c41; }
+td.coffee       { background-color: #a1887f; }
+td.lunch        { background-color: #4caf50; }
+td.invited      { background-color: #1976d2; }
+td.participant  { background-color: #f57c00; }
+td.special      { background-color: #9c27b0; }
+td.welcome      { background-color: #00796b; }
+td.other        { background-color: #607d8b; }
+td.open         { background-color: #388e3c; }
+td.dinner       { background-color: #c2185b; }
+td.tour         { background-color: #6d4c41; }
 
 
 .speaker-grid {
