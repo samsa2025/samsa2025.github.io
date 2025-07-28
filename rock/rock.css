@@ -665,3 +665,7 @@ td.tour         { background-color: #ff5555; font-size:small; font-weight:bold }
       background-color: #eee;
       font-style: italic;
     }
+
+table tr td:first-child {
+	vertical-align: top;
+}
